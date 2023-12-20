@@ -1,0 +1,29 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+$Primary-color: #ff6060;
+
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    margin: 2rem 6rem 3rem 6rem;
+    color: $Primary-color;
+    font-weight: 500;
+    gap: 3rem;
+}
+
+.Navbar-logo {
+    margin-right: auto;
+}
+
+.Navbar {
+    a {
+        font-size: 24px;
+        color: $Primary-color;
+        text-decoration: none;
+        font-weight: 500;
+    }
+}
