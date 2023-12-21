@@ -1,7 +1,7 @@
 import React from 'react';
 import './Info.scss';
 
-import Navbar from '../../Composants/Navbar';
+import Navbar from '../../Components/Navbar';
 
 function Info() {
     return (

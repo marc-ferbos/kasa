@@ -5,7 +5,6 @@ import './Appartement.scss';
 function Appartement() {
     return (    
     <div className = "Appartement" >
-        <Appartement></Appartement>
 
     </div>
     );

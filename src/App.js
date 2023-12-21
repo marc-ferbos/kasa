@@ -1,7 +1,7 @@
 import './App.scss';
-import Navbar from './Composants/Navbar';
-import Banner from './Composants/Banner';
-import Appartement from './Composants/Appartement';
+import Navbar from './Components/Navbar';
+import Banner from './Components/Banner';
+import Appartement from './Components/Appartement';
 
 function App() {
   return (
