@@ -3,14 +3,16 @@ import Navbar from './Components/Navbar';
 import Banner from './Components/Banner';
 import Appartement from './Components/Appartement';
 import Data from './Data/logement.json';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <div>
       <Navbar></Navbar>
       <Banner></Banner>
-      {Data.map((logement, index) => {
-        return (
+      <div className="window">
+        {Data.map((logement, index) => {
+      return (
           <Appartement
             key={index}
             id={logement.id}
@@ -24,6 +26,8 @@ function App() {
           ></Appartement>
         );
       })}
+      </div>
+      <Footer></Footer>
     </div>
   );
 }

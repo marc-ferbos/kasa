@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import App from "./App";
 import Info from "./pages/Info/Info";
+import Notfound from "./Components/Notfound";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -11,6 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Routes>
       <Route path="/" element={<App></App>} />
       <Route path="/apropos" element={<Info></Info>} />
+      <Route path="*" element={<h1>404 - Page Not Found</h1>} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
