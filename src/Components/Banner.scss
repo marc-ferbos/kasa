@@ -38,3 +38,30 @@
         z-index: 1;
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+
+    .Banner {
+        h1 {
+            font-size: min(4rem, 5vw);
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .Banner {
+        height: 150px;
+        h1 {
+            font-size: min(4rem, 4.5vw);
+        }
+    }
+
+
+    .Banner::before {
+        inset: 0 2rem 0 2rem;
+    }
+}

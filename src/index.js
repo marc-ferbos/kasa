@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import App from "./App";
 import Info from "./pages/Info/Info";
-import Notfound from "./Components/Notfound";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(

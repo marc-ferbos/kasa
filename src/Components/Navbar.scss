@@ -30,3 +30,21 @@ $Primary-color: #ff6060;
             }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .Navbar {
+        margin: 2rem 2rem 2rem 2rem;
+        align-items: center;
+        gap: 2rem;
+        img{
+            width: 125px;
+        
+        }
+    }
+    .Navbar {
+        a {
+            width: 40px;
+            font-size: min(4rem, 4vw);
+        }
+    }
+}
