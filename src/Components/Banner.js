@@ -1,11 +1,11 @@
 import React from 'react';
 import './Banner.scss';
 
-function Banner() {
+function Banner({title,classBanner}) {
     return (    
 
-    <div className = "Banner" >
-        <h1>Chez vous, partout et ailleurs</h1>
+    <div className ={"Banner " + classBanner} >
+        {title.length > 0 ? <h1>{title}</h1> : null}
     </div>
 
 

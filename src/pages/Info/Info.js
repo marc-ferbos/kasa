@@ -2,14 +2,18 @@ import React from 'react';
 import './Info.scss';
 
 import Navbar from '../../Components/Navbar';
-import Banner2 from '../../Components/Banner2';
 import Footer from '../../Components/Footer';
+import Banner from '../../Components/Banner';
+import Aproposinfo from '../../Components/Aproposinfo';
 
 function Info() {
     return (
       <>
       <Navbar></Navbar>
-      <Banner2></Banner2>
+      <Banner
+      title=""
+      classBanner="Info"></Banner>
+      <Aproposinfo></Aproposinfo>
       <Footer></Footer>
       </>
     );

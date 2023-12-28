@@ -9,7 +9,9 @@ function App() {
   return (
     <div>
       <Navbar></Navbar>
-      <Banner></Banner>
+      <Banner
+      title="Chez vous, partout et ailleurs"
+      classBanner="home"></Banner>
       <div className="window">
         {Data.map((logement, index) => {
       return (

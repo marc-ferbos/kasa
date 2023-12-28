@@ -11,16 +11,28 @@
     background-position: center;
     width: 100%;
     margin: auto;
-    height: 200px;
+    height: 235px;
     border-radius: 2rem;
     overflow: hidden;
     margin-bottom: 2rem;
 }
 
-.Banner::before {
+
+.Banner.home::before {
     content: "";
     position: absolute;
     background-image: url("./../../public/assets/imgbanner1.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    inset: 0 6rem 0 6rem;
+    border-radius: 2em;
+}
+
+.Banner.Info::before {
+    content: "";
+    position: absolute;
+    background-image: url("./../../public/assets/imgbanner2.png");
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -56,7 +68,7 @@
     .Banner {
         height: 150px;
         h1 {
-            font-size: min(4rem, 4.5vw);
+            font-size: min(4rem, 3.5vw);
         }
     }
 
