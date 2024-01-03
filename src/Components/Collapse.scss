@@ -1,0 +1,72 @@
+.appartementchilds {
+    width: 100%;
+}
+
+.appartement-details {
+    border-radius: 5px;
+    margin: 0 13rem 2rem 13rem;
+    span {
+        font-size: 1.7rem;
+        padding-top: 5px;
+        color: white;;
+    }
+    p {
+        font-size: 18px;
+        line-height: 25px;
+        color: #FF6060;
+        border-radius: 0 0 5px 5px;
+        margin-top: -3px;
+    }
+}
+
+.description1 {
+    color: white;
+    background-color: #FF6060;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 20px 10px 15px;
+    i {
+        animation: Spin 0.5s ease-in-out;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+}
+    
+.description-content {
+    position: relative;
+    z-index: -1;
+    background-color: #F6F6F6;
+    color: #FF6060;
+    padding: 10px 20px 10px 15px;
+    animation: SlideContent 0.5s ease-in-out;
+}
+
+@keyframes Spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes SlideContent {
+    0% {
+        margin-top: -40px;
+    }
+    100% {
+        margin-top: -3px;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .appartement-details {
+        margin: 0 2rem 2rem 2rem;
+    }
+}
