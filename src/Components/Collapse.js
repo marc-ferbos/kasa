@@ -11,16 +11,17 @@ function Collapse({title, description}) {
     
     return (
         <div className="appartement-details">
-                <div className="description1">
-                    <span>{title}</span>
-                    <i className="fa-solid fa-chevron-up" onClick={ContentON}></i>
-                </div>
-                {isContentVisible && <p className="description-content">
-                    {description}
-                </p>}
+            <div className="description1">
+                <span>{title}</span>
+                <i className={`fa-solid fa-chevron-up ${isContentVisible ? "rotate-chevron" : ''}`} onClick={ContentON}></i>
             </div>
+            {isContentVisible && (
+                <p className="description-content">
+                    {description}
+                </p>
+            )}
+        </div>
     )
-
 }
 
 export default Collapse;
