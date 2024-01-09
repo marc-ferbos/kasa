@@ -30,7 +30,7 @@ function Apartmentpage() {
         host,
         rating,
         equipments,
-    } = appartement;
+    } = appartement; /* On récupère les données de l'appartement */
 
     const listEquipments = (
         <ul>
@@ -80,20 +80,38 @@ function Apartmentpage() {
                             <span>{host?.name}</span>{" "}
                             {/* Si host existe, on affiche son nom */}
                         </div>
+
                         <div className="Apartment-rating">
                             <span className="Apartment-rating-stars">
-                                
+                                {(() => {
+                                    let stars =
+                                        ""; /* On initialise une variable vide */
+                                    for (let i = 0; i < rating; i++) {
+                                        if (i < rating) {
+                                            /* Si i est inférieur au rating */
+                                            stars +=
+                                                "★"; /* On ajoute une étoile */
+                                        } else {
+                                            /* Sinon */
+                                            stars +=
+                                                "☆"; /* On ajoute une étoile vide */
+                                        }
+                                    }
 
-
-
-
-                                
+                                    for (let i = 0; i < 5 - rating; i++) {
+                                        if (i < 5 - rating) {
+                                            /* Si i est inférieur à 5 - rating */
+                                            stars +=
+                                                "☆"; /* On ajoute une étoile vide */
+                                        } else {
+                                            /* Sinon */
+                                            stars +=
+                                                "★"; /* On ajoute une étoile */
+                                        }
+                                    }
+                                    return stars;
+                                })()}
                             </span>
-                            <span className="Apartment-rating-reviews">
-                                {" "}
-                                {host?.reviews} avis
-                            </span>{" "}
-                            {/* Si host existe, on affiche son nombre d'avis */}
                         </div>
                     </div>
                 </div>
