@@ -7,7 +7,7 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar></Navbar>
       <Banner
       title="Chez vous, partout et ailleurs"
@@ -30,7 +30,7 @@ function App() {
       })}
       </div>
       <Footer></Footer>
-    </div>
+    </>
   );
 }
 

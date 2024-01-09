@@ -99,8 +99,14 @@ $Primary-color: #FF6060;
 .Apartment-coll {
     margin-top: 20px;
     margin-bottom: 20px;
-    /*margin: 0rem;*/
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
+    > div {
+        width: 45%;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
 }
