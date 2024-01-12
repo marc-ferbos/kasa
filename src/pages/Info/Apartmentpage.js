@@ -24,7 +24,6 @@ function Apartmentpage() {
 
     let {
         title,
-        cover,
         location,
         tags,
         description,
