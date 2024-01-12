@@ -5,6 +5,7 @@ import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import Data from "../../Data/logement.json";
 import Collapse from "../../Components/Collapse";
+import Carousel from "../../Components/Carousel";
 
 function Apartmentpage() {
     const id = useParams().id; /* Récupère l'id de l'appartement dans l'URL */
@@ -47,7 +48,7 @@ function Apartmentpage() {
         <>
             <Navbar></Navbar>
             <div className="Apartment">
-                <img src={cover} alt={title} />
+                <Carousel imagesList={appartement.pictures}></Carousel>
                 <div className="Apartment-window">
                     <div className="Apartment-info">
                         <h3>{title}</h3>

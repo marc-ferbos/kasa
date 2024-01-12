@@ -1,0 +1,46 @@
+/*<img src={cover} alt={title} />*/
+
+
+.descriptionAccommodation {
+    display: flex;
+    align-items: center;
+    position: relative;
+    img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+}
+  
+  .arrow {
+    // Styles pour le conteneur des flèches et du texte
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+    padding: 0 1rem;
+    
+  }
+  
+    .arrow.left {
+        left: 0;
+    }
+
+    .arrow.right {
+        right: 0;
+    }
+
+  .number {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+  }
