@@ -1,6 +1,5 @@
 $Primary-color: #FF6060;
 
-
 .Apartment {
     display: flex;
     flex-direction: column;
@@ -11,7 +10,6 @@ $Primary-color: #FF6060;
 .Apartment-window {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .Apartment-info {
@@ -28,6 +26,10 @@ $Primary-color: #FF6060;
         font-weight: 500;
         color: $Primary-color;
     }
+  }
+
+  .Apartment-infos {
+    margin-top: 1rem;
   }
 
 .Apartment-tags {
@@ -91,7 +93,7 @@ $Primary-color: #FF6060;
 }
 
 .Apartment-coll {
-    margin-top: 2.3rem;
+    margin-top: 2.1rem;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -109,4 +111,150 @@ $Primary-color: #FF6060;
     color: $Primary-color;
     font-size: 2em;
     margin-right: 3px;
+}
+
+
+
+
+@media  screen and (max-width: 1024px) {
+    
+    .Apartment {
+        margin: 0rem 4rem;
+    }
+    .appartement-details {
+        margin: 0.5rem 0rem;
+    }
+
+    .Apartment-info {
+        margin-top: -1rem;
+        h3 {
+            font-size: min(2.5rem, 8vw);
+        }
+        span {
+            font-size: min(1.5rem, 5vw);
+        }
+    }
+
+    .description1 {
+        span{
+            font-size: 1.2rem;
+        }
+        i {
+            font-size: 1.2rem;
+        }
+    }
+    .Apartment-window {
+        
+    }
+    .Apartment-infos {
+        
+        
+    }
+    .Apartment-tags {
+        span {
+            font-size: min(1rem, 5vw);
+            margin-bottom: 0.5rem;
+            width: auto;
+        }
+        
+    }
+    .Apartment-host {
+        span {
+            font-size: min(1.5rem, 5vw);
+        }
+        
+    }
+
+    .Apartment-rating {
+        margin-top: 0px;
+        span {
+            font-size: min(2.5rem, 5vw);
+        }
+    }
+    .Apartment-coll {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 3.5rem 0rem;
+        > div {
+            width: 45%;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .Apartment {
+        margin: 0rem 2rem;
+    }
+    .appartement-details {
+        margin: 0.5rem 0rem;
+    }
+
+    .Apartment-info {
+        margin-top: -1rem;
+        h3 {
+            font-size: min(2.5rem, 8vw);
+        }
+        span {
+            font-size: min(1.5rem, 5vw);
+        }
+    }
+
+    .description1 {
+        span{
+            font-size: 1.2rem;
+        }
+        i {
+            font-size: 1.2rem;
+        }
+    }
+    .Apartment-window {
+        flex-direction: column;
+    }
+    .Apartment-infos {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .Apartment-tags {
+        span {
+            font-size: min(1rem, 5vw);
+            margin-bottom: 0.5rem;
+            width: auto;
+        }
+        
+    }
+    .Apartment-host {
+        span {
+            font-size: min(1.5rem, 5vw);
+        }
+        
+    }
+
+    .Apartment-rating {
+        margin-top: 0px;
+        span {
+            font-size: min(4rem, 5vw);
+        }
+    }
+    .Apartment-coll {
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5rem 0rem;
+        > div {
+            width: 100%;
+        }
+    }
+    
 }
