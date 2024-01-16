@@ -87,27 +87,14 @@ function Apartmentpage() {
                                     let stars =
                                         ""; /* On initialise une variable vide */
                                     for (let i = 0; i < rating; i++) {
-                                        if (i < rating) {
-                                            /* Si i est inférieur au rating */
-                                            stars +=
-                                                "★"; /* On ajoute une étoile */
-                                        } else {
-                                            /* Sinon */
-                                            stars +=
-                                                "☆"; /* On ajoute une étoile vide */
-                                        }
+                                        stars +=
+                                                "★"; /* On ajoute une étoile vide */
                                     }
 
                                     for (let i = 0; i < 5 - rating; i++) {
-                                        if (i < 5 - rating) {
                                             /* Si i est inférieur à 5 - rating */
                                             stars +=
                                                 "☆"; /* On ajoute une étoile vide */
-                                        } else {
-                                            /* Sinon */
-                                            stars +=
-                                                "★"; /* On ajoute une étoile */
-                                        }
                                     }
                                     return stars;
                                 })()}

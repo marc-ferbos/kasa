@@ -16,9 +16,9 @@ function Collapse({title, description}) {
                 <i className={`fa-solid fa-chevron-up ${isContentVisible ? "rotate-chevron" : ''}`} onClick={ContentON}></i>
             </div>
             {isContentVisible && (
-                <p className="description-content">
+                <div className="description-content">
                     {description}
-                </p>
+                </div>
             )}
         </div>
     )
